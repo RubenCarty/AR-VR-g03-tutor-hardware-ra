@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="hdd_target" size="10.000000 13.716216" />
+    <ImageTarget name="gpu_target" size="10.000000 10.000000" />
+    <ImageTarget name="cpu_target" size="10.000000 9.958333" />
+    <ImageTarget name="ram_target" size="10.000000 4.779970" />
+    <ImageTarget name="placamadre3_target" size="10.000000 9.397591" />
+    <ImageTarget name="placamadre2_target" size="10.000000 8.187500" />
+    <ImageTarget name="placamadre_target" size="10.000000 9.203125" />
+  </Tracking>
+</QCARConfig>
