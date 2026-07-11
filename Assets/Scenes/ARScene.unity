@@ -1221,7 +1221,7 @@ GameObject:
   - component: {fileID: 966820091}
   - component: {fileID: 966820090}
   m_Layer: 0
-  m_Name: SceneManagerController
+  m_Name: SceneLoader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4423,6 +4423,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 966820090}
+    - target: {fileID: 7051276394477441098, guid: 6b84f00ff0add0c4aaa896e12aba8183, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CargarExpo
+      objectReference: {fileID: 0}
     - target: {fileID: 7683732492929143923, guid: 6b84f00ff0add0c4aaa896e12aba8183, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
