@@ -3,10 +3,14 @@ using UnityEngine;
 
 public class ExpoPanelController : MonoBehaviour
 {
-    [Header("Panel de información")]
-    [SerializeField] private GameObject panelExpoInfo;
+    [Header("Textos del panel de información")]
     [SerializeField] private TMP_Text titulo;
     [SerializeField] private TMP_Text descripcion;
+
+    private void Start()
+    {
+        MostrarContenidoInicial();
+    }
 
     public void MostrarQueAprenderas()
     {
@@ -20,7 +24,7 @@ public class ExpoPanelController : MonoBehaviour
     {
         MostrarPanel(
             "¿Cómo usar la aplicación?",
-            "Inicia la experiencia, permite el acceso a la cámara y apunta el dispositivo hacia una imagen registrada. Luego selecciona el botón del componente para consultar su información."
+            "Inicia la experiencia, permite el acceso a la cámara y apunta el dispositivo hacia una imagen registrada. Cuando el componente sea reconocido, toca la pantalla para consultar su información."
         );
     }
 
@@ -34,12 +38,18 @@ public class ExpoPanelController : MonoBehaviour
 
     public void CerrarPanel()
     {
-        panelExpoInfo.SetActive(false);
+        MostrarContenidoInicial();
+    }
+
+    private void MostrarContenidoInicial()
+    {
+        titulo.text = "Información";
+        descripcion.text =
+            "Selecciona una opción para conocer más sobre la aplicación.";
     }
 
     private void MostrarPanel(string nuevoTitulo, string nuevaDescripcion)
     {
-        panelExpoInfo.SetActive(true);
         titulo.text = nuevoTitulo;
         descripcion.text = nuevaDescripcion;
     }

@@ -16,3 +16,7 @@ UserSettings/
 *.sln
 *.user
 *.userprefs
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
